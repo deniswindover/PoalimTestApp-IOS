@@ -48,7 +48,7 @@ class ImageCache {
             return
         }
 
-        DispatchQueue.main.async {
+        DispatchQueue.global(qos: .background).async {
             self.clearCache()
         }
         
