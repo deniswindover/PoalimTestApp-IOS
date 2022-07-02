@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddInfoReviewCell" rowHeight="95" id="KGk-i7-Jjw" customClass="AddInfoReviewCell" customModule="TestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="193-Bv-Xb1">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="bDp-qK-jVE"/>
+                            <constraint firstAttribute="height" constant="50" id="rcz-Ea-f4n"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.26274511220000002" green="0.56078433989999998" blue="0.6784313917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M14-bT-YVJ">
+                        <rect key="frame" x="66" y="8" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAdjustFontToSizeWidth" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZc-ss-sTo">
+                        <rect key="frame" x="66" y="40" width="44" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAdjustFontToSizeWidth" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW8-Wy-SYd">
+                        <rect key="frame" x="279.5" y="40" width="32.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAdjustFontToSizeWidth" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee2-yn-JND">
+                        <rect key="frame" x="8" y="66" width="304" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uW8-Wy-SYd" secondAttribute="trailing" constant="8" id="26o-PR-RHp"/>
+                    <constraint firstItem="uW8-Wy-SYd" firstAttribute="centerY" secondItem="qZc-ss-sTo" secondAttribute="centerY" id="4AA-m7-2CD"/>
+                    <constraint firstAttribute="bottom" secondItem="ee2-yn-JND" secondAttribute="bottom" constant="8" id="ApN-XR-gMz"/>
+                    <constraint firstItem="M14-bT-YVJ" firstAttribute="leading" secondItem="193-Bv-Xb1" secondAttribute="trailing" constant="8" symbolic="YES" id="S1e-6l-dIa"/>
+                    <constraint firstAttribute="trailing" secondItem="ee2-yn-JND" secondAttribute="trailing" constant="8" id="VHX-19-EQ7"/>
+                    <constraint firstItem="ee2-yn-JND" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="cZs-ov-o77"/>
+                    <constraint firstItem="qZc-ss-sTo" firstAttribute="bottom" secondItem="193-Bv-Xb1" secondAttribute="bottom" id="erQ-DH-pEL"/>
+                    <constraint firstItem="ee2-yn-JND" firstAttribute="top" secondItem="193-Bv-Xb1" secondAttribute="bottom" constant="8" symbolic="YES" id="jAo-n1-w2F"/>
+                    <constraint firstItem="M14-bT-YVJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="kag-br-r87"/>
+                    <constraint firstItem="qZc-ss-sTo" firstAttribute="leading" secondItem="193-Bv-Xb1" secondAttribute="trailing" constant="8" symbolic="YES" id="lcB-jk-Wmz"/>
+                    <constraint firstItem="193-Bv-Xb1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="oJs-ry-NEN"/>
+                    <constraint firstItem="193-Bv-Xb1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="wn8-lW-eka"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="ivAvatar" destination="193-Bv-Xb1" id="TXZ-HS-dPx"/>
+                <outlet property="lblAuthor" destination="M14-bT-YVJ" id="5cH-mh-a0r"/>
+                <outlet property="lblDate" destination="uW8-Wy-SYd" id="czt-Te-B00"/>
+                <outlet property="lblRating" destination="qZc-ss-sTo" id="ePU-gS-rJg"/>
+                <outlet property="txtContent" destination="ee2-yn-JND" id="XUD-ly-20R"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
